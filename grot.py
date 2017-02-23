@@ -24,7 +24,7 @@ class GrotGame:
         return self.num_of_moves < other.num_of_moves
 
     def __str__(self):
-        return ' '.join(['Start position: ', repr(self.start_pos), 'Moves: ', str(self.num_of_moves)])
+        return ' '.join(['Start position: ', str(self.start_pos), 'Moves: ', str(self.num_of_moves)])
 
 
 class Position:
