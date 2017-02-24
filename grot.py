@@ -134,7 +134,7 @@ def main(description):
             else:
                 game.move(direction)
                 prev_direction = direction
-            if game.num_of_moves == (Position.max_x + 1) * (Position.max_y + 1):
+            if game.num_of_moves == ((Position.max_x + 1) * (Position.max_y + 1)) + 1:
                 raise RuntimeError('Algorithm fault. All fields visited but game did not returned')
         board.clear_visited_directions()
         logger.debug(str(game))
